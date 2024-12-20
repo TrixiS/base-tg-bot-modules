@@ -42,8 +42,6 @@ async def mailing_form_submit_handler(form: MailingForm):
 
     mailed_messages_count = 0
 
-    await asyncio.sleep(5)
-
     for bot_user_id in bot_user_ids:
         try:
             await form.message.copy_to(bot_user_id)

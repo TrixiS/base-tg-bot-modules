@@ -5,8 +5,14 @@ user_start_markup = (
 )
 
 admin_start_markup = (
-    ReplyKeyboardBuilder.from_markup(user_start_markup)
+    ReplyKeyboardBuilder.from_markup(user_start_markup)  # type: ignore
     .button(text=phrases.admin.admin)
+    .adjust(2, repeat=True)
+    .as_markup(resize_keyboard=True, one_time_keyboard=False, is_persistent=True)
+)
+
+admin_markup = (
+    ReplyKeyboardBuilder()
     .adjust(2, repeat=True)
     .as_markup(resize_keyboard=True, one_time_keyboard=False, is_persistent=True)
 )

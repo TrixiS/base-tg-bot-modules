@@ -1,7 +1,7 @@
 from aiogram import F, Router, types
 from aiogram.fsm.context import FSMContext
 
-from ..phrases import phrases
+from .. import phrases
 from . import root_router
 
 router = Router()

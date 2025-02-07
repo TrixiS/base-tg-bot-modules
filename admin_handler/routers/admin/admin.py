@@ -1,7 +1,6 @@
 from aiogram import F, types
 
-from ... import markups
-from ...phrases import phrases
+from ... import markups, phrases
 from . import router
 
 

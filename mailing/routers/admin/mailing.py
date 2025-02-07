@@ -4,11 +4,10 @@ from aiogram import F, types
 from aiogram.fsm.context import FSMContext
 from aiogram3_form import Form, FormField
 
-from ... import markups
+from ... import markups, phrases
 from ...callback_data import CancelMailingCallbackData
 from ...client import bot
 from ...database.models import BotUser
-from ...phrases import phrases
 from . import router
 
 _MAILING_TASKS_MAP: dict[tuple[int, int], asyncio.Task] = {}

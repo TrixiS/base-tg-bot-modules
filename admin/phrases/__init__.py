@@ -1,3 +1,1 @@
-from .admin_phrases import AdminPhrases
-
-    admin = AdminPhrases()
+from . import admin_phrases as admin

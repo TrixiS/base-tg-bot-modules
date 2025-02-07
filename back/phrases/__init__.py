@@ -1,1 +1,1 @@
-    back_button_text = "Назад"
+back_button_text = "Назад"

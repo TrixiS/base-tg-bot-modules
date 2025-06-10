@@ -1,1 +1,1 @@
-    admin_user_id: int = 0
+    admin_user_ids: list[int] = []

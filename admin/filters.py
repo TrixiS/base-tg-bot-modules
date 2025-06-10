@@ -2,7 +2,7 @@ from .config import config
 
 
 def is_admin(user_id: int):
-    return config.admin_user_id == user_id
+    return user_id in config.admin_user_ids
 
 
 def admin_filter(_, is_admin: bool):
